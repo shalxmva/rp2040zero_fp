@@ -482,7 +482,7 @@
 		(thermal_bridge_angle 90)
 		(uuid "08041b7c-c434-4a7b-b366-8720ea10ff77")
 	)
-	(model "${KIPRJMOD}/rp2040zero_fp.pretty/RP2040_Zero.stp"
+	(model "RP2040_Zero.stp"
 		(offset
 			(xyz 0.05 -0.08 1)
 		)
