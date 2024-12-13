@@ -68,37 +68,15 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start 0 -24)
-		(end 18 0)
+		(start 3.25 -23.26)
+		(end 15.02 -3.08)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(fill none)
-		(layer "F.SilkS")
+		(layer "Dwgs.User")
 		(uuid "245d93c7-781c-4e92-b184-c2d722426acf")
-	)
-	(fp_rect
-		(start 3.2 -23.5)
-		(end 14.8 -2.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "bd3bfde7-ed3b-4ecc-83d4-fba5d3a7f45f")
-	)
-	(fp_circle
-		(center 1.38 -19.37)
-		(end 1.83525 -19.37)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "a22670f1-6697-4e40-a172-c1717205c4fa")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 9 -13 0)
