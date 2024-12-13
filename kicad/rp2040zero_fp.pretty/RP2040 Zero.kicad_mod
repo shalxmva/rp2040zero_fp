@@ -68,94 +68,6 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start -1 -22.69)
-		(end 2.1405 -21.1395)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "b3b7a6f8-5155-4df7-81cb-5f393f1319cd")
-	)
-	(fp_rect
-		(start -1 -20.15)
-		(end 2.1405 -18.5995)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "e4979de3-3ad3-4091-89b3-aeeed85f93c1")
-	)
-	(fp_rect
-		(start -1 -17.60525)
-		(end 2.1405 -16.05475)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "feb5b756-5408-404e-a5e7-b589133a82c5")
-	)
-	(fp_rect
-		(start 15.8595 -2.35)
-		(end 19 -0.829)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "48d1ad96-6525-4413-98ae-41102cf10c08")
-	)
-	(fp_rect
-		(start -1 -22.69)
-		(end 2.1405 -21.1395)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Paste")
-		(uuid "47507733-7371-4f7c-b63b-8e8385afbf91")
-	)
-	(fp_rect
-		(start -1 -20.15)
-		(end 2.1405 -18.5995)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Paste")
-		(uuid "707a5dac-bd97-4999-8a10-aa8510759a8d")
-	)
-	(fp_rect
-		(start -1 -17.60525)
-		(end 2.1405 -16.05475)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Paste")
-		(uuid "6b7c3fcf-3e5c-471a-8e52-b737845af300")
-	)
-	(fp_rect
-		(start 15.8595 -2.35)
-		(end 19 -0.829)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Paste")
-		(uuid "127e9060-29fc-4e88-a790-a9977990779c")
-	)
-	(fp_rect
 		(start 0 -24)
 		(end 18 0)
 		(stroke
@@ -165,50 +77,6 @@
 		(fill none)
 		(layer "F.SilkS")
 		(uuid "245d93c7-781c-4e92-b184-c2d722426acf")
-	)
-	(fp_rect
-		(start -1 -22.69)
-		(end 2.1405 -21.1395)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "82a81c21-ffa1-45ed-a7a9-538a3628d39a")
-	)
-	(fp_rect
-		(start -1 -20.15)
-		(end 2.1405 -18.5995)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "4273698d-5ac2-466d-a2a1-b8a8784c4c2c")
-	)
-	(fp_rect
-		(start -1 -17.60525)
-		(end 2.1405 -16.05475)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "fa0e758c-75f5-431e-99e4-c7192d940ab6")
-	)
-	(fp_rect
-		(start 15.8595 -2.35)
-		(end 19 -0.829)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "d5dba22e-8f82-49be-a575-cb54f22b6145")
 	)
 	(fp_rect
 		(start 3.2 -23.5)
@@ -292,13 +160,19 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "353a28cf-e7b5-4d07-8d72-30cdc209013f")
 	)
-	(pad "9" thru_hole circle
+	(pad "9" thru_hole custom
 		(at 16.62 -1.59 180)
-		(size 1.521 1.521)
-		(drill 0.9105)
+		(size 3.1405 1.521)
+		(drill 0.9105
+			(offset -0.81025 0)
+		)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives)
 		(uuid "2fb94a19-38d7-47bc-8c35-64dd5963905c")
 	)
 	(pad "10" smd rect
@@ -357,39 +231,50 @@
 	)
 	(pad "19" smd rect
 		(at 0.57025 -11.74475 180)
-		(size 3.1405 1.5105)
+		(size 3.1405 1.521)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "f1d7290b-a073-4dda-accf-a66fdd007155")
 	)
 	(pad "20" smd rect
 		(at 0.57025 -14.27525 180)
-		(size 3.1405 1.5505)
+		(size 3.1405 1.521)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "e1825175-62af-4a60-8143-d3c900cec832")
 	)
-	(pad "21" thru_hole circle
-		(at 1.38 -16.83 180)
-		(size 1.521 1.521)
-		(drill 0.9105)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
+	(pad "21" smd rect
+		(at 0.57025 -16.83 180)
+		(size 3.1405 1.521)
+		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "5c978edb-f1b2-413f-a681-2c1eb514c290")
 	)
-	(pad "22" thru_hole circle
+	(pad "22" thru_hole custom
 		(at 1.38 -19.37 180)
-		(size 1.521 1.521)
-		(drill 0.9105)
+		(size 3.1405 1.521)
+		(drill 0.9105
+			(offset 0.81025 0)
+		)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives)
 		(uuid "e4b6a103-452e-4daf-821d-1bc57b0debee")
 	)
-	(pad "23" thru_hole circle
+	(pad "23" thru_hole custom
 		(at 1.38 -21.91 180)
-		(size 1.521 1.521)
-		(drill 0.9105)
+		(size 3.1405 1.521)
+		(drill 0.9105
+			(offset 0.81025 0)
+		)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives)
 		(uuid "a9cd92a7-e208-4591-928a-0804c4679532")
 	)
 	(pad "24" thru_hole circle
